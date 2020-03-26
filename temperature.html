@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let Temperatue = function (cDegree,fDegree) {
+
+        this.c=cDegree;
+        this.f=fDegree;
+        this.changeCIntoF=function () {
+             return ((this.c*1.8)+32);
+        }
+        this.changeFIntoC=function () {
+            return ((this.f-32)/1.8);
+
+        }
+    }
+    let temperature = new Temperatue(10,40);
+    let F = temperature.changeCIntoF();
+    let C = temperature.changeFIntoC();
+    document.write(F+ " va "+C);
+
+
+</script>
+</body>
+</html>
